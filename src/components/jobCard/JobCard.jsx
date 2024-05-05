@@ -23,12 +23,17 @@ function JobCard() {
                     <h1 className='text-[1rem] text-slate-600 font-medium font-sans pb-4'>Estimated Salary: ₹ 18 -35 LPA ✅</h1>
                     <h1 className='text-[1.1rem] font-medium font-sans'>About Company:</h1>
                     <h1 className='text-[1rem] font-semibold font-sans'>About us</h1>
-                    <div className='relative font-light text-[1rem]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis iste autem porro voluptatum, alias dolore. Voluptatem aliquid et magnam reiciendis natus, vel iusto illum blanditiis, distinctio repellendus maiores veritatis odio asperiores quidem impedit eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nulla!
-                        <h1 className={`${readMore && 'hidden'} absolute w-full h-[3rem] top-[78%] flex justify-center items-end text-violet-500 backdrop-blur-[1px] bg-white/60`} onClick={() => setReadMore(!readMore)}> View job </h1>
+                    <div className='relative font-light text-[1rem]'>
+                        <p className={readMore ? '' : 'line-clamp-6'}>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste autem porro voluptatum, alias dolore. Voluptatem aliquid et magnam reiciendis natus, vel iusto illum blanditiis, distinctio repellendus maiores veritatis odio asperiores quidem impedit eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nulla! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint in, ullam minus reiciendis fuga itaque sed. Qui velit tenetur accusantium quia magnam rem, magni, ullam quo illo at autem. Officiis ipsum eligendi distinctio, doloremque aspernatur animi mollitia neque omnis? Minima ex expedita mollitia adipisci vel quaerat, nihil nam, tempore excepturi provident illo repudiandae ab necessitatibus corporis repellendus eum ipsam sint explicabo, nisi cumque quis porro! Praesentium natus soluta, assumenda perferendis itaque culpa, qui distinctio laborum voluptatum ipsa nobis quasi quas sunt iusto facilis explicabo pariatur unde quaerat molestiae? Beatae enim, inventore libero magnam iste asperiores perferendis? Earum sapiente quasi ea.
+                        </p>
+                        {!readMore && (
+                            <button className="absolute top-[40%] left-0 h-[10rem] w-full text-[#7875E0] bg-gradient-to-b from-gray-200/10 via-white to-white" onClick={() => setReadMore(true)}>View job</button>
+                        )}
                     </div>
-                    {/* {readMore &&
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis iste autem porro voluptatum, alias dolore. Voluptatem aliquid et magnam reiciendis natus, vel iusto illum blanditiis, distinctio repellendus maiores veritatis odio asperiores quidem impedit eos. Iure tempore facilis laudantium. Nam eveniet tempora, tempore vel iusto consequuntur suscipit facilis. Neque eum minus provident repellendus, illum tenetur tempore modi, soluta minima, nostrum inventore quos explicabo cum voluptate ipsum nulla officia officiis magnam recusandae laboriosam ipsa voluptas error. Cupiditate officiis, quasi, commodi repudiandae fuga blanditiis provident ipsam odit veritatis voluptas velit ducimus nemo, debitis quia incidunt? Et, quos sequi omnis quidem corrupti veritatis fugiat? officia officiis magnam recusandae laboriosam ipsa voluptas errorofficia officiis magnam recusandae laboriosam ipsa voluptas errorofficia officiis magnam recusandae laboriosam ipsa voluptas error</p>} */}
-                    <h1 className='tracking-[.1rem] text-gray-400 pt-[3rem] text-[0.9rem] font-medium'>Minimum Experience</h1>
+                </div>
+                <div className='pt-[5rem] pb-[1rem]'>
+                    <h1 className='tracking-[.1rem] text-gray-400  text-[0.9rem] font-medium'>Minimum Experience</h1>
                     <h1 className='font-normal text-[0.9rem]'>2 years</h1>
                 </div>
                 <div className='flex flex-col gap-2'>
