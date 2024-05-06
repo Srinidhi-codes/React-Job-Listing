@@ -3,12 +3,11 @@ import Badge from '../Badge/Badge';
 import Profile from '../../assets/profile.jpg';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { setJobList } from '../redux/jobSlice'
+import { setJobList } from '../../redux/jobSlice'
 import JobModal from '../modal/JobModal';
 import Filters from '../Filters/Filters';
 import './jobCard.css'
 function JobCard() {
-    const [jobData, setJobData] = useState([]);
     const [open, setOpen] = useState(false);
     const [limit, setLimit] = useState(12);
     const [id, setId] = useState({});
@@ -54,7 +53,6 @@ function JobCard() {
                 };
                 const response = await fetch("https://api.weekday.technology/adhoc/getSampleJdJSON", requestOptions);
                 const data = await response.json();
-                setJobData(data.jdList);
                 dispatch(setJobList(data.jdList));
             } catch (error) {
                 console.error(error);
@@ -70,13 +68,12 @@ function JobCard() {
         (data) => (minExp === 0 || data.minExp == minExp),
         (data) => (minBasePay === 0 || data.minJdSalary == minBasePay)
     ];
-    console.log(jobData)
     return (
         <>
             <Filters jobList={job} setMinExp={setMinExp} setLocation={setLocation} setRole={setRole} setName={setName} name={name} setMinBasePay={setMinBasePay} />
             {open && <JobModal open={open} setOpen={setOpen} jobDesc={job} index={id} />}
             <div className='card__wrapper'>
-                {jobData?.filter(data => filters.every(filter => filter(data)))?.map((data, index) => <div key={index} className='card' >
+                {job?.filter(data => filters.every(filter => filter(data)))?.map((data, index) => <div key={index} className='card' >
                     <div><Badge /></div>
                     <div className='card__title__section'>
                         <div className='image__wrapper'>
