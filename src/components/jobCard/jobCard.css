@@ -1,5 +1,4 @@
 .card__wrapper{
-  /* flex justify-center items-center flex-wrap gap-5 px-8 pt-[7rem] */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,4 +140,40 @@ img{
   width: 30px;
   height: 30px;
   filter: blur(1.5px);
+}
+
+@media only screen and (max-width: 10295px) {
+  .card{
+    width: 20rem;
+    height: auto;
+  }
+  .card__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    padding: 0;
+    padding-top: 14rem;
+  }
+  .easy__apply{
+    background-color: #55EFC2;
+    font-size: 1rem;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  .apply__referral{
+    display: flex;
+    align-items: center;
+    background-color: #4842DA;
+    font-style: 0.8rem;
+    color: white;
+    font-weight: 300;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1rem 1rem;
+  }
 }

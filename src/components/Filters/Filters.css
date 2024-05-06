@@ -1,5 +1,6 @@
 .filterWrapper{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
@@ -26,7 +27,6 @@
 }
 
 .selectLine{
-    /* absolute top-[20%] left-[12.5rem] h-[1.5rem] bg-slate-300 w-px */
     position: absolute;
     top: 20%;
     left: 12.5rem;
@@ -34,3 +34,12 @@
     background-color: #d1d1d1;
     width: 1px;
 }
+
+@media only screen and (max-width: 10295px) {
+    .filterWrapper .selectWrapper select,input{
+        width: 8rem;
+    }
+    .selectLine{
+        visibility: hidden;
+    }
+  }
