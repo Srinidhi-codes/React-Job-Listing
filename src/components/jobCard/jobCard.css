@@ -1,0 +1,144 @@
+.card__wrapper{
+  /* flex justify-center items-center flex-wrap gap-5 px-8 pt-[7rem] */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0 2rem;
+  padding-top: 7rem;
+}
+.card{
+  width: 25rem;
+  height: auto;
+  border: 1px solid rgba(201, 201, 201, 0.863);
+  border-radius: 20px;
+  padding: 1.5rem 1rem;
+}
+.card:hover{
+  box-shadow: 0px 1px 5px #888888;
+}
+.card__title__section{
+  display: flex;
+  padding: 1rem 0;
+}
+.image__wrapper{
+  padding-right: 1rem;
+}
+img{
+  border-radius: 10px;
+}
+.company__title{
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #718096;
+}
+.company__role{
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  padding-bottom: 0.3rem;
+  text-transform: capitalize;
+}
+.company__location{
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.company__wrapper{
+  padding-bottom: 1rem;
+}
+.company__salary{
+  font-size: 1rem;
+  color: #54697e;
+  font-weight: 600;
+  font-family: sans-serif;
+  padding-bottom: 1rem;
+}
+.company__about{
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.company__about__us{
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.company__description__wrapper{
+  position: relative;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.company__description{
+ display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+}
+.view__job__btn{
+  position: absolute;
+  top: 40%;
+  font-weight: 500;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  color: #7875E0;
+}
+.company__experience__wrapper{
+  padding-top: 5rem;
+  padding-bottom:1rem;
+}
+.company__experience{
+  letter-spacing: 0.1rem;
+  color: #A0AEC0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.company__years{
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.apply__btn__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.easy__apply{
+  background-color: #55EFC2;
+  font-size: 1rem;
+  border-radius: 15px;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+.apply__referral{
+  display: flex;
+  align-items: center;
+  background-color: #4842DA;
+  font-style: 1rem;
+  color: white;
+  font-weight: 400;
+  border-radius: 15px;
+  width: 100%;
+  padding: 1rem 2.2rem;
+}
+.img1{
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  opacity: 0.7;
+  width: 30px;
+  height: 30px;
+  filter: blur(1.5px);
+}
+.img2{
+  border-radius: 20px;
+  margin-right: 1.25rem;
+  opacity: 0.7;
+  width: 30px;
+  height: 30px;
+  filter: blur(1.5px);
+}
