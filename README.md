@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hosted : GitHub Link : https://github.com/Srinidhi-codes/React-Job-Listing
+Hosted Link : https://effortless-twilight-bb0cc6.netlify.app/
 
 ## Available Scripts
 
